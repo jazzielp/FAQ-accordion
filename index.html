@@ -11,26 +11,36 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body>
-    <section class="accordion">
+    <header class="header"></header>
+    <footer class="footer"></footer>
+    <main class="card">
       <!-- header -->
-      <header class="accordion__header">
+      <div class="card__header">
         <span class="header__icon">+</span>
         <h1 class="header__title">FAQs</h1>
-      </header>
+      </div>
       <!-- main -->
-      <main class="accordion__main">
+      <div class="card__main">
         <ul class="main__list">
           <!-- item 1 -->
           <li class="list__item">
             <div class="item__container">
-            <h2 class="item__title">What is Frontend Mentor, and how will it help me?</h2>
-            <span class="item__icon">+</span>
-          </div>
-          <p class="item__content">Fontend Mentor offers realistic coding challenges to help developers improve their fronend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for porfolion building.</p>
+              <h2 class="item__title">
+                What is Frontend Mentor, and how will it help me?
+              </h2>
+              <span class="item__icon">+</span>
+            </div>
+            <p class="item__content">
+              Fontend Mentor offers realistic coding challenges to help
+              developers improve their fronend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for porfolion building.
+            </p>
           </li>
 
           <!-- item 2 -->
@@ -41,17 +51,21 @@
 
           <!-- item 3 -->
           <li class="list__item">
-            <h2 class="item__title">Can I use Frontend Mentor projects in my portfolio?</h2>
+            <h2 class="item__title">
+              Can I use Frontend Mentor projects in my portfolio?
+            </h2>
             <span class="item__icon">+</span>
           </li>
-          
+
           <!-- item 4 -->
           <li class="list__item">
-            <h2 class="item__title">How can I get help if I'm stuck on a challenge?</h2>
+            <h2 class="item__title">
+              How can I get help if I'm stuck on a challenge?
+            </h2>
             <span class="item__icon">+</span>
           </li>
         </ul>
-      <main/>
-    </section>
+      </div>
+    </main>
   </body>
 </html>
