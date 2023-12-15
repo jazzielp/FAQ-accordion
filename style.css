@@ -12,10 +12,15 @@
     --Grayish-purple: hsl(292, 16%, 49%);
     --Dark-purple: hsl(292, 42%, 14%);
     --Background-section: #F8EDFE;
+    --Other: #AD28EB
 }
 
 html {
     font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -44,9 +49,8 @@ body {
     position: absolute;
     top: 145px;
     left: calc(50% - 166px);
-    width: 330px;
     min-width: 330px;
-    max-width: 300px;
+    width: 330px;
     padding: 24px 16px;
     padding-bottom: 0px;
     border-radius: 12px;
@@ -63,17 +67,18 @@ body {
   }
   
   .header__icon {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
     background-image: url('./assets/images/icon-star.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
   }
 
   .header__title {
     margin-left: 16px;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     font-weight: 700;
     color: var(--Dark-purple);
   }
@@ -108,7 +113,12 @@ body {
   }
 
   .item__title {
+    
     padding-right: 16px;
+  }
+
+  .title__link:hover {
+    color: var(--Other);
   }
 
   .item__content {
@@ -130,5 +140,12 @@ body {
   .item__icon--active {
     background-image: url('./assets/images/icon-minus.svg');
     margin-left: 12px;
+  }
+
+  @media screen and (min-width: 800px) { 
+    .card {
+      width: 490px;
+      left: calc(50% - 265px);
+    }
   }
 
